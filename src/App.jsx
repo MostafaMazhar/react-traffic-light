@@ -1,10 +1,14 @@
 import React from "react";
+import TrafficLight from "./component/TrafficLight";
 
 //include images into your bundle
 
-//create your first component
-const App = () => {
-  return <div className="text-center"></div>;
-};
+export default function App() {
+  const [currentColor, setCurrentColor] = React.useState("red"); //set default state to 'Red'
 
-export default App;
+  return (
+    <div>
+      <TrafficLight />
+    </div>
+  );
+}
