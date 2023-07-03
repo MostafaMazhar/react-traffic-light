@@ -3,8 +3,8 @@ import React from "react";
 //include images into your bundle
 
 //create your first component
-const Home = () => {
+const App = () => {
   return <div className="text-center"></div>;
 };
 
-export default Home;
+export default App;

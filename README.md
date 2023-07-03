@@ -4,6 +4,20 @@ Start coding a react application
 
 > If you are working locally instead of using codespaces or gitpod, please follow [local installation steps](#local-installation-skip-if-you-are-working-on-codespaces-or-gitpod) and come back to this part of the readme.
 
+## Project Structure
+
+```
+├── src
+│   ├── App.js
+│   ├── index.js
+│   ├── components
+│   │   └── TrafficLight.js
+│   └── styles
+│       └── App.css
+└── public
+    └── index.html
+```
+
 ## How to start coding?
 
 - Install the packages with `$ npm install`.
