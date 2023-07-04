@@ -5,16 +5,23 @@ import "../src/styles/App.css";
 export default function App() {
   const [currentColor, setCurrentColor] = React.useState("red"); //set default state to 'Red'
 
-  const handleState = () => {
-    if (currentColor === "red") {
-      setCurrentColor("green");
-    } else if (currentColor === "green") {
-      setCurrentColor("yellow");
-    } else if (currentColor === "yellow") {
-      setCurrentColor("red");
-    }
-  };
+  // const handleState = () => {
+  //   if (currentColor === "red") {
+  //     setCurrentColor("green");
+  //   } else if (currentColor === "green") {
+  //     setCurrentColor("yellow");
+  //   } else if (currentColor === "yellow") {
+  //     setCurrentColor("red");
+  //   }
+  // };
 
+  const handleState = () => {
+    setCurrentColor((prevState) => {
+      if (prevState === "red") return "green";
+      else if (prevState === "green") return "yellow";
+      else return "red";
+    });
+  };
   return (
     <div className="app">
       <TrafficLight color={currentColor} />
