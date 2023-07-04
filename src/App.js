@@ -1,7 +1,6 @@
 import React from "react";
-import TrafficLight from "./component/TrafficLight";
-
-//include images into your bundle
+import TrafficLight from "./component/TrafficLight.js";
+import "../src/styles/App.css";
 
 export default function App() {
   const [currentColor, setCurrentColor] = React.useState("red"); //set default state to 'Red'
@@ -18,8 +17,10 @@ export default function App() {
 
   return (
     <div className="app">
-      <TrafficLight className={currentColor} />
-      <button className="btn" onClick={handleState}></button>
+      <TrafficLight color={currentColor} />
+      <button className="btn" onClick={handleState}>
+        Change Color
+      </button>
     </div>
   );
 }

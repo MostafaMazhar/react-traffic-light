@@ -17,10 +17,10 @@ if (process.env.CODESPACE_NAME) {
 }
 
 module.exports = {
-  entry: ["./src/App.jsx"],
+  entry: ["./src/index.js"],
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname, "dist"),
     publicPath: "/",
   },
   module: {
