@@ -17,6 +17,8 @@ Start coding a react application
 └── public
     └── index.html
 ```
+##
+![trafficLight](https://github.com/MostafaMazhar/react-traffic-light/assets/65758011/bd3e5dae-2e61-43eb-94ac-eb6a05ce32d3)
 
 ## How to start coding?
 
