@@ -7,8 +7,9 @@ export default function App() {
   const [currentColor, setCurrentColor] = React.useState("red"); //set default state to 'Red'
 
   return (
-    <div>
-      <TrafficLight />
+    <div className="App">
+      <TrafficLight className={currentColor} />
+      <button className="btn" onClick={handleState}></button>
     </div>
   );
 }
