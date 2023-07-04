@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div className="app">
       <TrafficLight color={currentColor} />
-      <button className="btn" onClick={handleState}>
+      <button className={`btn ${currentColor}`} onClick={handleState}>
         Change Color
       </button>
     </div>
