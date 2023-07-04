@@ -9,10 +9,10 @@ export default function App() {
   const handleState = () => {
     if (currentColor === "red") {
       setCurrentColor("green");
-    } else if (currentColor === "yellow") {
-      setCurrentColor("yellow");
     } else if (currentColor === "green") {
-      setCurrentColor("green");
+      setCurrentColor("yellow");
+    } else if (currentColor === "yellow") {
+      setCurrentColor("red");
     }
   };
 
